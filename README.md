@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript, showcasing my skills, projects, and experience. It includes interactive sections such as resume view/download, skills & expertise, and project highlights, designed with clean UI/UX principles.
 
-🌍 Live Demo: (https://sivadharani-a.netlify.app/)
+🌍 Live Demo: https://sivadharani-a.netlify.app/
 
 🚀 Features
 
