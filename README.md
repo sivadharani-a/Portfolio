@@ -1,6 +1,6 @@
 🌐 My Portfolio
 
-A modern, responsive personal portfolio website built with HTML, CSS, showcasing my skills, projects, and experience. It includes interactive sections such as resume view/download, skills & expertise, and project highlights, designed with clean UI/UX principles.
+A modern, responsive personal portfolio website built with HTML, CSS, Javascript showcasing my skills, projects, and experience. It includes interactive sections such as resume view/download, skills & expertise, and project highlights, designed with clean UI/UX principles.
 
 🌍 Live Demo: https://sivadharani-a.netlify.app/
 
@@ -18,7 +18,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, showcasing
 
 🛠️ Tech Stack
 
-Frontend: HTML5, CSS3
+Frontend: HTML5, CSS3, Javascript
 
 Styling: CSS
 
