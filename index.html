@@ -1,561 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivadharani - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .smooth-scroll { scroll-behavior: smooth; }
-        .gradient-text { background: linear-gradient(135deg, #634f40 0%, #e6b794 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
-    </style>
+  <meta charset="UTF-8">
+  <title>[YOUR NAME] | SOC Analyst Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/soc-dashboard.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 smooth-scroll">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full backdrop-blur-md z-50 border-b" style="background-color: rgba(243, 240, 233, 0.95); border-color: #f0d8b8;">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-xl font-bold" style="color: #634f40;">Sivadharani</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Home</a>
-                    <a href="#about" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">About</a>
-                    <a href="#skills" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Skills</a>
-                    <a href="#education" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Education</a>
-                    <a href="#internships" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Internships</a>
-                    <a href="#projects" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Projects</a>
-                    <a href="#contact" class="transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Contact</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-2">
-                <a href="#home" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Home</a>
-                <a href="#about" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">About</a>
-                <a href="#skills" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Skills</a>
-                <a href="#education" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Education</a>
-                <a href="#internships" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Internships</a>
-                <a href="#projects" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Projects</a>
-                <a href="#contact" class="block py-2 transition-colors" style="color: #634f40;" onmouseover="this.style.color='#e6b794'" onmouseout="this.style.color='#634f40'">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-        <div class="max-w-4xl mx-auto px-6 text-center relative">
-            
-
-            
-            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #634f40;">Sivadharani</h1>
-            <p class="text-xl md:text-2xl mb-8" style="color: #634f40;">Cybersecurity Enthusiast</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                
-                <a href="Sivadharani - SOC Analyst Resume.pdf" target="_blank" class="px-6 py-3 rounded-lg font-medium transition-all hover:shadow-lg flex items-center justify-center" style="background-color: #e6b794; color: #634f40;" onmouseover="this.style.backgroundColor='#d4a373'" onmouseout="this.style.backgroundColor='#e6b794'">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                </svg>
-                View My Resume
-                </a>
-
-                
-                
-                <a href="Sivadharani - SOC Analyst Resume.pdf" download class="px-6 py-3 rounded-lg font-medium transition-all hover:shadow-lg border-2 flex items-center justify-center" style="border-color: #e6b794; color: #634f40; background-color: #f3f0e9;" onmouseover="this.style.backgroundColor='#e6b794'; this.style.color='#f3f0e9'" onmouseout="this.style.backgroundColor='#f3f0e9'; this.style.color='#634f40'">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-                Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #634f40;">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6" style="color: #634f40;">Hello! I'm Sivadharani</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        I’m a recent Master’s graduate with a strong interest and a solid foundation in cybersecurity. I’m passionate about building secure, efficient, and user-friendly digital solutions that make an impact.                    </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                    My academic journey has strengthened both my technical expertise and my problem-solving mindset. Along the way, I developed a deep appreciation for protecting digital assets while also creating innovative web applications. I believe in continuous growth, staying up to date with the latest technologies, and adapting quickly in an ever-evolving industry. </p>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-3 py-1 rounded-full text-sm" style="background-color: #f3f0e9; color: #634f40;">Problem Solver</span>
-                        <span class="px-3 py-1 rounded-full text-sm" style="background-color: #f0d8b8; color: #634f40;">Team Player</span>
-                        <span class="px-3 py-1 rounded-full text-sm" style="background-color: #e6b794; color: #634f40;">Quick Learner</span>
-                        <span class="px-3 py-1 rounded-full text-sm" style="background-color: #f3f0e9; color: #634f40;">Detail Oriented</span>
-                    </div>
-                </div>
-                <div class="p-8 rounded-2xl" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-                    <h4 class="text-xl font-semibold mb-4" style="color: #634f40;">Quick Facts</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center">
-                            <span class="w-2 h-2 rounded-full mr-3" style="background-color: #634f40;"></span>
-                            <span style="color: #634f40;">Master's in Computer Applications</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-2 h-2 rounded-full mr-3" style="background-color: #f3f0e9;"></span>
-                            <span style="color: #634f40;">Cybersecurity Enthusiast</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-2 h-2 rounded-full mr-3" style="background-color: #634f40;"></span>
-                            <span style="color: #634f40;">Foundation in Networking</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-2 h-2 rounded-full mr-3" style="background-color: #f3f0e9;"></span>
-                            <span style="color: #634f40;">Ready to Make an Impact</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Skills Section -->
-<section id="skills" class="py-20" style="background-color: #f3f0e9;">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12" style="color: #634f40;">
-      Skills & Expertise
-    </h2>
-
-    <div class="flex flex-wrap justify-center gap-8">
-
-      <!-- Python -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/python/3776AB"
-             alt="Python" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Python</span>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-content">
+      <div class="logo">SIVADHARANI</div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://github.com/sivadharani-a" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sivadharani23" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sivadharani823@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
+    </div>
+  </nav>
 
-<!-- Linux -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Linux</span>
-      </div>
-
-      <!-- Kali Linux -->
-        <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer" src="https://cdn.simpleicons.org/kalilinux" alt="Kali Linux" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Kali Linux</span>
-        </div>
-
-        <!-- Bash -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Bash" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Bash</span>
-      </div>
-
-      <!-- Burp Suite -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/burpsuite"
-             alt="Burp Suite" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Burp Suite</span>
-      </div>
-
-      <!-- Nmap -->
-        <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Logo_nmap.png" alt="Nmap" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Nmap</span>
-        </div>
-
-      <!-- Wireshark -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/wireshark"
-             alt="Wireshark" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Wireshark</span>
-      </div>
-
-      <!-- Metasploit -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/metasploit"
-             alt="Metasploit" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">Metasploit</span>
-      </div>
-
-      <!-- Nessus -->
-    <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Nessus-Professional-FullColor-RGB.svg" alt="Nessus" class="w-12 h-12 mb-3">
-    <span class="text-sm font-medium" style="color:#634f40;">Nessus</span>
+  <main>
+<section id="home" class="dashboard-section">
+  <div class="container">
+    <div class="page-header">
+      <h1>SIVADHARANI<span style="color:var(--soc-cyan)"> </span></h1>
+      <p><strong>Aspiring SOC Analyst | Cybersecurity Enthusiast</strong><br>
+      <span style="color:var(--soc-green)"></span></p>
+    </div>
+    
+    <div style="display:flex;gap:1.5rem;justify-content:center;margin:3rem 0 2rem;flex-wrap:wap">
+      <a href="assets/resume/A_Sivadharani_Resume.pdf" class="btn-soc" target="_blank" style="background:var(--soc-cyan)">
+        <i class="fas fa-eye"></i> View Resume
+      </a>
+      <a href="assets/resume/A_Sivadharani_Resume.pdf" class="btn-soc" download style="background:var(--soc-green)">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
     </div>
 
+    <div class="terminal-grid">
+      <div class="terminal-grid">
+          <div class="terminal-card" data-status="Core Strength">
+            <i class="fas fa-search terminal-icon"></i>
+            <h2>SIEM & Log Analysis</h2>
+            <p class="meta">Splunk • Sysmon • Windows Logs</p>
+            <p>Real-time monitoring, correlation rules, alert triage, and suspicious activity investigation</p>
+          </div>
+          <div class="terminal-card" data-status="Hands-on Labs">
+            <i class="fas fa-project-diagram terminal-icon"></i>
+            <h2>Home Lab Builder</h2>
+            <p class="meta">SOC Environments • Detection Rules</p>
+            <p>Built functional SOC labs with Splunk+Sysmon integration and MITRE ATT&CK mapping</p>
+          </div>
+          <div class="terminal-card" data-status="Blue Team">
+            <i class="fas fa-shield-alt terminal-icon"></i>
+            <h2>Defensive Operations</h2>
+            <p class="meta">Incident Response • Threat Hunting</p>
+            <p>Alert investigation, vulnerability detection, secure development practices</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
 
+    </section>
 
-      <!-- JavaScript -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/javascript/F7DF1E"
-             alt="JavaScript" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">JavaScript</span>
+    <section id="about" class="dashboard-section">
+      <div class="container">
+        <div class="page-header">
+          <div class="section-label">ANALYST PROFILE</div>
+          <h1>About Me</h1>
+          <p>Aspiring SOC Analyst ready for production environments</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+          <div class="terminal-card" style="padding:3rem;text-align:left">
+            <i class="fas fa-user-shield" style="font-size:4rem;color:var(--soc-cyan);margin-bottom:2rem;display:block"></i>
+            <h2 style="color:var(--soc-green);margin-bottom:1.5rem">SOC Analyst Profile</h2>
+            <p><strong>Aspiring SOC Analyst</strong>with hands-on experience in security lab environments, SIEM monitoring, Sysmon log analysis, and basic threat detection.</p>
+            <p>Skilled in reviewing alerts, analyzing events, and applying MITRE ATT&CK techniques. Strong interest in security operations, incident response, and continuous skill development.</p>
+            <p style="margin-top:1.5rem"><strong>Status:</strong> <span style="color:var(--soc-green)">Actively seeking full-time SOC L1 opportunities</span></p>
+          </div>
+          <div>
+            <div class="terminal-card" data-status="Key Focus Areas">
+              <h3 style="color:var(--soc-cyan)">Core Competencies</h3>
+              <ul style="color:var(--text-main);margin-top:1rem">
+                <li>SIEM-based monitoring and alert review</li>
+                <li>Sysmon event analysis & detection engineering</li>
+                <li>Incident documentation & reporting</li>
+                <li>Understanding attacker TTPs (MITRE ATT&CK)</li>
+                <li>Secure coding & vulnerability assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- HTML5 -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">HTML5</span>
+    <section id="education" class="dashboard-section">
+      <div class="container">
+        <div class="page-header">
+          <h1>Education</h1>
+        </div>
+        <div class="terminal-grid">
+          <div class="terminal-card" data-status="Master's">
+            <i class="fas fa-graduation-cap terminal-icon" style="color:var(--soc-cyan)"></i>
+            <h2>Master of Computer Applications (MCA)</h2>
+            <p class="meta">Anna University • 2023 - 2025</p>
+            <p>Tiruchirappalli, Tamil Nadu</p>
+            <p><Strong>CGPA: 8.4</Strong></p>
+          </div>
+          <div class="terminal-card" data-status="Bachelor's">
+            <i class="fas fa-graduation-cap terminal-icon" style="color:var(--soc-green)"></i>
+            <h2>Bachelor of Computer Applications (BCA)</h2>
+            <p class="meta">AVC College • 2020 - 2023</p>
+            <p>Mayiladuthurai, Tamil Nadu</p>
+            <p><Strong>CGPA: 8</Strong></p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- SQL (MySQL icon as generic SQL) -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center w-32 hover:shadow-xl transition">
-        <img loading="lazy" referrerpolicy="no-referrer"
-             src="https://cdn.simpleicons.org/mysql/4479A1"
-             alt="SQL" class="w-12 h-12 mb-3">
-        <span class="text-sm font-medium" style="color:#634f40;">SQL</span>
+    <section id="skills" class="dashboard-section">
+      <div class="container">
+        <div class="page-header">
+          <h1>Skills Matrix</h1>
+        </div>
+        <div class="terminal-grid">
+          <div class="terminal-card" data-status="Core SOC">
+            <i class="fas fa-search terminal-icon" style="color:var(--soc-cyan)"></i>
+            <h2>Security Monitoring & Detection</h2>
+            <p class="meta">SIEM (Splunk) • Sysmon Logging • Log Analysis</p>
+            <p>Windows Event Logs • Threat Detection • Alert Investigation • Correlation Rules</p>
+          </div>
+          <div class="terminal-card" data-status="Cyber Tools">
+            <i class="fas fa-network-wired terminal-icon" style="color:var(--soc-green)"></i>
+            <h2>Cybersecurity Tools</h2>
+            <p class="meta">Wireshark • Nmap • Burp Suite • Metasploit</p>
+            <p>Kali Linux • OpenVAS (basic) • Vulnerability Assessment</p>
+          </div>
+          <div class="terminal-card" data-status="Frameworks">
+            <i class="fas fa-layer-group terminal-icon" style="color:var(--soc-purple)"></i>
+            <h2>Frameworks & Concepts</h2>
+            <p class="meta">MITRE ATT&CK • Incident Response Lifecycle</p>
+            <p>SOC Tier 1 Processes • Access Control • Network Security Basics</p>
+          </div>
+          <div class="terminal-card" data-status="Development">
+            <i class="fas fa-code terminal-icon" style="color:var(--soc-yellow)"></i>
+            <h2>Scripting & Systems</h2>
+            <p class="meta">Python • Bash • Basic Regex</p>
+            <p>Windows (10/11, Server) • Linux Administration • TCP/IP • Firewalls & VPNs</p>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section id="projects" class="dashboard-section">
+      <div class="container">
+        <div class="page-header">
+          <h1>PROJECTS</h1>
+          <p>Demonstrated SOC, cybersecurity, and full-stack capabilities</p>
+        </div>
+        <div class="incident-feed">
+          <div class="incident-item">
+            <span class="incident-priority priority-p1">SOC Lab</span>
+            <h3 style="color:var(--soc-cyan)">SOC Home Lab (Splunk + Sysmon)</h3>
+            <p class="meta" style="color:var(--soc-yellow)">Splunk Enterprise • Sysmon • Windows Logs • MITRE ATT&CK</p>
+            <p>Configured functional SOC environment integrating Sysmon telemetry into Splunk. Built dashboards for process monitoring, created detection rules, analyzed execution anomalies and persistence techniques.</p>
+            
+          </div>
+
+          <div class="incident-item">
+            <span class="incident-priority priority-p1">ML AWAF</span>
+            <h3 style="color:var(--soc-green)">WebDefender-X (ML-Based AWAF)</h3>
+            <p class="meta" style="color:var(--soc-yellow)">Python • Scikit-learn • Flask • Linux</p>
+            <p>Implemented ML-based Web Application Firewall detecting SQLi, XSS, DDoS traffic. Developed anomaly detection models and real-time monitoring dashboard.</p>
+            <div style="margin-top:1.5rem">
+              <a href="https://eventmaster-smartaipro.netlify.app/" target="_blank" class="btn-soc" style="font-size:.85rem;background:var(--soc-cyan)">
+                <i class="fas fa-external-link-alt"></i> View 
+              </a>
+              <a href="https://github.com/sivadharani-a/WebDefender-X" target="_blank" class="btn-soc" style="font-size:.9rem;background:var(--soc-purple);color:#fff">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="incident-item">
+            <span class="incident-priority priority-p2">Event Master</span>
+            <h3 style="color:var(--soc-yellow)">Event Master - Smart Web App</h3>
+            <p class="meta" style="color:var(--soc-yellow)">Python • HTML • CSS • AI Chatbot</p>
+            <p>Smart web app for task, schedule, health, and event management with AI chatbot support and productivity insights. Full-stack productivity dashboard.</p>
+            <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+              <a href="https://eventmaster-smartaipro.netlify.app/" target="_blank" class="btn-soc" style="font-size:.85rem;background:var(--soc-cyan)">
+                <i class="fas fa-external-link-alt"></i> View 
+              </a>
+              <a href="https://github.com/sivadharani-a/EventMaster" target="_blank" class="btn-soc" style="font-size:.85rem">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="incident-item">
+            <span class="incident-priority priority-p2">Dashboard</span>
+            <h3 style="color:var(--soc-purple)">Remote Village App</h3>
+            <p class="meta" style="color:var(--soc-yellow)">React • HTML • Real-time Data</p>
+            <p>The Remote Village App provides simple, accessible digital learning for students in remote areas, especially those preparing for 10th, 12th, and competitive exams. It offers study content, online tests, and guided evaluation. The platform aims to uplift and motivate rural students in their academic journey.</p>
+            <div style="margin-top:1.5rem">
+              <a href="https://remotevillage2023-25.web.app/" target="_blank" class="btn-soc" style="font-size:.85rem;background:var(--soc-green)">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
+
+          <div class="incident-item">
+            <span class="incident-priority priority-p3">Port Scanner</span>
+            <h3 style="color:var(--soc-cyan)">Secure Port Scanner</h3>
+            <p class="meta" style="color:var(--soc-yellow)">Python • Flask • Nmap</p>
+            <p>Developed web-based vulnerability scanner identifying open ports and CVE issues. Implemented secure input handling, RBAC, structured vulnerability reports.</p>
+            <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+              <a href="https://eventmaster-smartaipro.netlify.app/" target="_blank" class="btn-soc" style="font-size:.85rem;background:var(--soc-cyan)">
+                <i class="fas fa-external-link-alt"></i> View 
+              </a>
+              <a href="https://github.com/sivadharani-a/Secure-Port-Scanner" target="_blank" class="btn-soc" style="font-size:.85rem">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+
+          <!-- 6. SafeShort -->
+          <div class="incident-item">
+            <span class="incident-priority priority-p3">URL Shortener</span>
+            <h3 style="color:var(--soc-green)">SafeShort (Secure URL Shortener)</h3>
+            <p class="meta" style="color:var(--soc-yellow)">Python • Flask • SQLite</p>
+            <p>Built secure URL-shortening platform with malicious URL detection, hash-based short code generation, safe redirection, logging, security validation.</p>
+            <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+                <a href="https://github.com/sivadharani-a/SafeShort---URL-Shortener-" target="_blank" class="btn-soc" style="font-size:.85rem">
+                <i class="fab fa-github"></i> GitHub
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="dashboard-section">
+      <div class="container">
+        <div class="page-header">
+          <div class="section-label">VALIDATED COMPETENCIES</div>
+          <h1>Certifications</h1>
+        </div>
+        <div class="terminal-grid">
+          <div class="terminal-card" data-status="Google Cybersecurity">
+            <i class="fas fa-certificate terminal-icon" style="color:var(--soc-cyan)"></i>
+            <h2>Google Cybersecurity Certificate</h2>
+            <p class="meta">Tools of the Trade: Linux and SQL </p>
+            <p>Comprehensive foundation in cybersecurity operations, Linux administration, SQL for security analysis</p>
+          </div>
+          <div class="terminal-card" data-status="Google Cybersecurity">
+            <i class="fas fa-certificate terminal-icon" style="color:var(--soc-green)"></i>
+            <h2>Google Cybersecurity Certificate</h2>
+            <p class="meta">Play It Safe: Manage Security Risks</p>
+            <p>Risk management frameworks, threat modeling, security controls implementation</p>
+          </div>
+          <div class="terminal-card" data-status="TATA Forage">
+            <i class="fas fa-certificate terminal-icon" style="color:var(--soc-purple)"></i>
+            <h2>TATA Forage Cybersecurity Analyst</h2>
+            <p class="meta">Job Simulation</p>
+            <p>Real-world SOC analyst workflows, incident response simulation, operational procedures</p>
+          </div>
+          <div class="terminal-card" data-status="Full Stack">
+            <i class="fas fa-certificate terminal-icon" style="color:var(--soc-yellow)"></i>
+            <h2>Full Stack Java Development</h2>
+            <p class="meta">Edubridge</p>
+            <p>Secure application development, full-stack security considerations, defensive coding</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="contact" class="dashboard-section">
+  <div class="container">
+    <div class="page-header">
+      <div class="section-label">GET IN TOUCH</div>
+      <h1>Let's Connect</h1>
+    </div>
+    
+    <div class="contact-grid">
       
-    </div>
-  </div>
-</section>
+      <div class="contact-icons">
+        <a href="mailto:your-email@gmail.com" class="icon-link gmail-icon" title="Email me" aria-label="Email">
+          <svg viewBox="0 0 24 24" class="social-svg">
+            <path fill="#4285F4" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+          </svg>
+        </a>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #634f40;">Education</h2>
-            <div class="space-y-12">
-                <!-- Postgraduate -->
-                <div class="max-w-4xl mx-auto p-8 rounded-2xl shadow-lg" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-        <div class="flex items-start">
-          <div class="w-20 h-20 rounded-lg flex items-center justify-center mr-6 flex-shrink-0 bg-white overflow-hidden">
-            <!-- Anna University Logo -->
-            <img src="https://www.freelogovectors.net/wp-content/uploads/2022/03/anna_university_logo_freelogovectors.net_.png"
-                 alt="Anna University Logo" class="object-contain w-full h-full">
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-semibold mb-2" style="color: #634f40;">Master of Computer Applications</h3>
-            <p class="text-xl mb-2" style="color: #634f40; opacity: 0.8;">Anna University, Tiruchirappalli</p>
-            <p class="mb-4" style="color: #634f40; opacity: 0.7;">2023 - 2025 | CGPA: 8.4</p>
-          </div>
-        </div>
+        <a href="https://linkedin.com/in/your-username" target="_blank" class="icon-link linkedin-icon" title="LinkedIn Profile" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="social-svg">
+            <path fill="#0077B5" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/your-username" target="_blank" class="icon-link github-icon" title="GitHub Profile" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="social-svg">
+            <path fill="#181717" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
       </div>
 
-                <!-- Undergraduate -->
-                <div class="max-w-4xl mx-auto p-8 rounded-2xl shadow-lg" style="background: linear-gradient(135deg, #e6b794 0%, #f0d8b8 100%);">
-        <div class="flex items-start">
-          <div class="w-20 h-20 rounded-lg flex items-center justify-center mr-6 flex-shrink-0 bg-white overflow-hidden">
-            <!-- Bharathidasan University Logo -->
-            <img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Bharathidasan_University_logo.png" 
-                 alt="Bharathidasan University Logo" class="object-contain w-full h-full">
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-semibold mb-2" style="color: #634f40;">Bachelor of Computer Applications</h3>
-            <p class="text-xl mb-2" style="color: #634f40; opacity: 0.8;">Bharathidasan University</p>
-            <p class="mb-4" style="color: #634f40; opacity: 0.7;">2020 - 2023 | CGPA: 8</p>
-          </div>
-        </div>
+      <div class="contact-form">
+        <h3><i class="fas fa-comment-dots"></i> Quick Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Mail" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-soc" style="background:var(--soc-green)">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
+</main>
+  <script src="assets/js/dashboard.js"></script>
+</body>
 
-    <!-- Internships Section -->
-    <section id="internships" class="py-20" style="background-color: #f3f0e9;">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #634f40;">Internships & Experience</h2>
-            <div class="space-y-8">
-                <!-- Internship 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold" style="color: #634f40;">Cybersecurity Intern</h3>
-                            <p class="text-lg" style="color: #e6b794;">ShadowFox</p>
-                        </div>
-                        <span class="text-gray-500 mt-2 md:mt-0">October 2024 - November 2024</span>
-                    </div>
-                    <ul class="text-gray-600 space-y-2">
-                        <li>• Conducted vulnerability assessments and assisted in the creation of secure login systems, ensuring compliance with industry-standard security protocols</li>
-                        <li>• Committed to safeguarding critical data and delivering proactive solutions to enhance organizational security posture</li>
-                        <li>• Applied secure coding practices while developing authentication modules for secure access systems</li>
-                        <li>• Developed technical documentation outlining system vulnerabilities and resolution strategies</li>
-                    </ul>
-                </div>
-
-                <!-- Internship 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold" style="color: #634f40;">Ethical Hacking and Penetration Testing Intern</h3>
-                            <p class="text-lg" style="color: #e6b794;">C-DAC</p>
-                        </div>
-                        <span class="text-gray-500 mt-2 md:mt-0">December 2024 - January 2025</span>
-                    </div>
-                    <ul class="text-gray-600 space-y-2">
-                        <li>• Conducted banner grabbing techniques to identify vulnerable websites and propose countermeasures</li>
-                        <li>• Applied vulnerability assessment, exploit detection, and network security practices in real-world scenarios</li>
-                        <li>• Utilized penetration testing methodologies and ethical hacking tools for security evaluation</li>
-                        <li>• Strengthened expertise in threat analysis and implementing effective security best practices</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #634f40;">Featured Projects</h2>
-            
-            <div id="projects-grid" class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="p-8 rounded-2xl shadow-lg card-hover" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🔐</span>
-                        <h3 class="text-xl font-semibold" style="color: #634f40;">WebDefender-X</h3>
-                    </div>
-                    <p class="mb-4" style="color: #634f40; opacity: 0.8;">WebDefender-X is an AI-powered Adaptive Web Application Firewall (AWAF) that detects and mitigates SQLi, XSS, and DDoS attacks in real time. It is a real-time dashboard, and adaptive learning for scalable, low-false-positive protection.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Flask</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Socket.IO</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Python</span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://webdefender-x.onrender.com/" target="_blank">
-                         <button class="font-medium hover:opacity-80" style="color: #634f40;">View Demo</button>
-                        </a>
-                        <a href="https://github.com/sivadharani-a/WebDefender-X" target="_blank">
-                         <button class="font-medium hover:opacity-80" style="color: #f3f0e9;">GitHub</button>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="p-8 rounded-2xl shadow-lg card-hover" style="background: linear-gradient(135deg, #e6b794 0%, #f0d8b8 100%);">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🌐</span>
-                        <h3 class="text-xl font-semibold" style="color: #634f40;">SecurePort Scanner</h3>
-                    </div>
-                    <p class="mb-4" style="color: #634f40; opacity: 0.8;">A lightweight, fast, and user-friendly network port scanner with a modern UI. Built for developers, students, and security professionals to detect open ports, analyze vulnerabilities, and export results as PDF reports.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Python</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Flask</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Nmap</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Scapy</span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://secure-port-scanner.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        <button class="font-medium hover:opacity-80" style="color: #634f40;">View Demo</button>
-                        </a>
-
-                        <!-- GitHub Button -->
-                        <a href="https://github.com/sivadharani-a/Secure-Port-Scanner" target="_blank" rel="noopener noreferrer">
-                        <button class="font-medium hover:opacity-80" style="color: #f3f0e9;">GitHub</button>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="p-8 rounded-2xl shadow-lg card-hover" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">🛡️</span>
-                        <h3 class="text-xl font-semibold" style="color: #634f40;">Event Master</h3>
-                    </div>
-                    <p class="mb-4" style="color: #634f40; opacity: 0.8;">Event Master is a smart web app built with HTML and CSS that helps users manage tasks, schedules, health, and personal events in one place, with AI chatbot support and productivity insights.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">Python</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">HTML</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">CSS</span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://eventmaster-smartaipro.netlify.app/" target="_blank" rel="noopener noreferrer">
-                         <button class="font-medium hover:opacity-80" style="color: #634f40;">View Demo</button>
-                        </a>
-
-                            <!-- GitHub Button -->
-                        <a href="https://github.com/sivadharani-a/EventMaster" target="_blank" rel="noopener noreferrer">
-                         <button class="font-medium hover:opacity-80" style="color: #f3f0e9;">GitHub</button>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="p-8 rounded-2xl shadow-lg card-hover" style="background: linear-gradient(135deg, #e6b794 0%, #f0d8b8 100%);">
-                    <div class="flex items-center mb-4">
-                        <span class="text-3xl mr-3">📊</span>
-                        <h3 class="text-xl font-semibold" style="color: #634f40;">Remote Village App</h3>
-                    </div>
-                    <p class="mb-4" style="color: #634f40; opacity: 0.8;">Interactive dashboard for monitoring web application performance, user behavior, and security metrics with real-time data visualization.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">React</span>
-                        <span class="bg-white px-2 py-1 rounded text-sm" style="color: #634f40;">HTML</span>
-                    </div>
-                    <div class="flex space-x-4">
-                        <a href="https://remotevillage2023-25.web.app/" target="_blank" rel="noopener noreferrer">
-                            <button class="font-medium hover:opacity-80" style="color: #634f40;">View Demo</button>
-                        </a>                   
-                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20" style="background: linear-gradient(135deg, #f0d8b8 0%, #e6b794 100%);">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #634f40;">Get In Touch</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <p class="text-xl mb-8" style="color: #634f40; opacity: 0.8;">Ready to start the next chapter of my career! Let's connect and discuss opportunities.</p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Gmail -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #f0d8b8;">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" style="color: #634f40;">
-                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2" style="color: #634f40;">Email</h3>
-                        <p class="text-gray-600 mb-4">sivadharani823@gmail.com</p>
-                        <a href="mailto:sivadharani823@gmail.com" class="inline-block text-white px-6 py-2 rounded-lg transition-colors hover:opacity-80" style="background-color: #634f40;">Send Email</a>
-                    </div>
-
-                    <!-- LinkedIn -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #e6b794;">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" style="color: #634f40;">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2" style="color: #634f40;">LinkedIn</h3>
-                        <p class="text-gray-600 mb-4">linkedin.com/in/sivadharani23</p>
-                        <a href="https://linkedin.com/in/sivadharani23" target="_blank" class="inline-block text-white px-6 py-2 rounded-lg transition-colors hover:opacity-80" style="background-color: #e6b794;">Connect</a>
-                    </div>
-
-                    <!-- GitHub -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #f3f0e9;">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" style="color: #634f40;">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2" style="color: #634f40;">GitHub</h3>
-                        <p class="text-gray-600 mb-4">github.com/sivadharani-a</p>
-                        <a href="https://github.com/sivadharani-a" target="_blank" class="inline-block text-white px-6 py-2 rounded-lg transition-colors hover:opacity-80" style="background-color: #634f40;">View Profile</a>
-                    </div>
-                </div>
-
-                <div class="text-center mt-12">
-                    <p class="mb-6" style="color: #634f40; opacity: 0.8;">Or feel free to reach out through any of these platforms. I'm always excited to discuss new opportunities and collaborations!</p>
-                    <div class="flex justify-center space-x-6">
-                        <a href="mailto:sivadharani823@gmail.com" class="transition-colors hover:opacity-80" style="color: #634f40;">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/sivadharani23" target="_blank" class="transition-colors hover:opacity-80" style="color: #634f40;">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/sivadharani-a" target="_blank" class="transition-colors hover:opacity-80" style="color: #634f40;">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8" style="background-color: #634f40;">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p style="color: #f3f0e9; opacity: 0.8;">&copy; 2025 Sivadharani. Built with passion and attention to detail.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // See more projects functionality
-        const seeMoreBtn = document.getElementById('see-more-btn');
-        const hiddenProjects = document.getElementById('hidden-projects');
-        let showingMore = false;
-
-        seeMoreBtn.addEventListener('click', () => {
-            if (!showingMore) {
-                hiddenProjects.classList.remove('hidden');
-                seeMoreBtn.textContent = 'Show Less';
-                showingMore = true;
-            } else {
-                hiddenProjects.classList.add('hidden');
-                seeMoreBtn.textContent = 'See More Projects';
-                showingMore = false;
-                // Scroll back to projects section
-                document.getElementById('projects').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-
-        // Add active navigation highlighting
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('nav a[href^="#"]');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.style.color = '#634f40';
-                link.style.fontWeight = 'normal';
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.style.color = '#e6b794';
-                    link.style.fontWeight = '600';
-                }
-            });
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'973cf300e072c6ab',t:'MTc1NTk3NjYzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<footer style="padding:1rem 0;background:var(--glass-dark);border-top:1px solid var(--border-terminal);margin-top:1rem">
+  <div class="container">
+    <p style="color:var(--soc-green);font-size:1rem;text-align:center">
+© 2025 SIVADHARANI. All Rights Reserved.
+ </p>
+  </div>
+</footer>
 </html>
-
-
-
-
-
-
-
