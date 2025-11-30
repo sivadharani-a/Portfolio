@@ -1,7 +1,5 @@
-// === PERFECT SCROLL + NAVIGATION SYSTEM ===
 document.addEventListener('DOMContentLoaded', function() {
   
-  // SMOOTH SCROLL FOR NAV LINKS
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
@@ -13,13 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         block: 'start'
       });
       
-      // Update active nav
       document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
       this.classList.add('active');
     });
   });
 
-  // ACTIVE NAV ON SCROLL
   window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('.dashboard-section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // STAGGERED ANIMATION ON SCROLL
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
@@ -55,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(section);
   });
 
-  // NAVBAR SHRINK ON SCROLL
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -69,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // FORM SUBMISSION
   document.querySelector('.contact-terminal').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('🚀 Alert transmitted! Response SLA: 24 hours. (Demo mode)');
   });
 });
+
